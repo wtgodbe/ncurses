@@ -228,6 +228,11 @@ railroad(char **args)
 int
 main(int argc, char *argv[])
 {
+	int number;
+	WINDOW *data = newpad(2 + 20, 8);
+	keypad(data, TRUE);
+	waddstr(data, "Defined form edit/traversal keys:\n");
+	number = getcury(data);
     if (argc > 1) {
 	railroad(argv + 1);
     } else {
