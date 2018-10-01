@@ -34,7 +34,7 @@
  * A simple demo of the termcap interface.
  */
 #define USE_TINFO
-#include <test.priv.h>
+#include "test.priv.h"
 
 #if HAVE_TGETENT
 
