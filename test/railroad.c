@@ -228,7 +228,7 @@ railroad(char **args)
 int
 main(int argc, char *argv[])
 {
-	int x
+	int x;
 	int y;
 	WINDOW *data = newpad(2 + 20, 8);
 	keypad(data, TRUE);
